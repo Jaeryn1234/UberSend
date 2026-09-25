@@ -43,7 +43,7 @@ export const sTabBar = StyleSheet.create({
     flexDirection: "row",
     borderTopWidth: 1,
     borderBottomWidth: 1,
-    borderColor: "#ddd",
+    borderColor: "white",
   },
   //it was not adjusting screen size with flex:1 so chatgpt said to use width:25%
   //targets each individual tab
@@ -56,6 +56,7 @@ export const sTabBar = StyleSheet.create({
     height: "60%",
     borderWidth: 1,
     margin: 8,
+    borderColor: "rgb(243, 243, 243)",
   },
   image: {
     width: 18,
