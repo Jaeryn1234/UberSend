@@ -83,8 +83,7 @@ export const ContentPlaceholder = () => {
         <Image style={s.arrowImage} source={require("../../assets/images/rightArrow.png")}/>
       </View>
 
-      //Featured
-      <ScrollView horizontal={true} contentContainerStyle={s.scrollContainer}>
+      <ScrollView horizontal={true}>
         <View style={s.card}>
           <Image style={s.scrollImage} source={require("../../assets/images/subway.png")}/>
           <View style={s.space}>
@@ -136,8 +135,7 @@ export const ContentPlaceholder = () => {
           <Image style={s.arrowImage} source={require("../../assets/images/rightArrow.png")}/>
       </View>
 
-      //Most Reviewed
-      <ScrollView horizontal={true} contentContainerStyle={s.scrollContainer}>
+      <ScrollView horizontal={true}>
         <View style={s.card}>
           <Image style={s.scrollImage} source={require("../../assets/images/indianCurry.jpg")}/>
         </View>

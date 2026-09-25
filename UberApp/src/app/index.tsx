@@ -1,4 +1,5 @@
 import {
+    Platform,
     Alert,
     Pressable,
     SafeAreaView,
@@ -13,7 +14,15 @@ import { ProfileHeader } from "../components/ProfileHeader";
 import { TabBarPlaceholder } from "../components/TabBarPlaceholder";
 
 export default function IndexScreen() {
-  const showAlert = () => Alert.alert("Alert Button pressed");
+  
+  const showAlert = () => {
+  if (Platform.OS === "web") {
+  window.alert("Alert Button pressed");
+  } else {
+  Alert.alert("Alert Button pressed");
+  }
+  };
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={[{ flex: 1} , s.screen]}>
