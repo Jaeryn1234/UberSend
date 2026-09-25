@@ -1,11 +1,11 @@
 import { ScrollView, Image, Pressable, StyleSheet, Text, View } from "react-native";
 import {sTabBar} from "./TabBarPlaceholder";
 import {sProfile} from "./ProfileHeader";
-import {styles} from "./Styles";
 
 export const ContentPlaceholder = () => {
   return (
     <View>
+        {/*food options*/}
         <ScrollView horizontal={true} contentContainerStyle={s.container}>
             <View style={s.card}>
                 <Image
@@ -48,7 +48,7 @@ export const ContentPlaceholder = () => {
           </View>
         </ScrollView>
 
-
+      {/*Features */}
       <View style={sTabBar.c}>
         <Pressable style={[sTabBar.t, sTabBar.button, s.colorTags]}>
           <Image style={sTabBar.image} source={require("../../assets/images/pickup.png")}/>
@@ -83,6 +83,7 @@ export const ContentPlaceholder = () => {
         <Image style={s.arrowImage} source={require("../../assets/images/rightArrow.png")}/>
       </View>
 
+      {/*Featured images*/}
       <ScrollView horizontal={true}>
         <View style={s.card}>
           <Image style={s.scrollImage} source={require("../../assets/images/subway.png")}/>
@@ -135,6 +136,7 @@ export const ContentPlaceholder = () => {
           <Image style={s.arrowImage} source={require("../../assets/images/rightArrow.png")}/>
       </View>
 
+      {/*Most reviewed images */}
       <ScrollView horizontal={true}>
         <View style={s.card}>
           <Image style={s.scrollImage} source={require("../../assets/images/indianCurry.jpg")}/>

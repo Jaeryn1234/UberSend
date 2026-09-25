@@ -15,6 +15,7 @@ import { TabBarPlaceholder } from "../components/TabBarPlaceholder";
 
 export default function IndexScreen() {
   
+  //make button work on web
   const showAlert = () => {
   if (Platform.OS === "web") {
   window.alert("Alert Button pressed");

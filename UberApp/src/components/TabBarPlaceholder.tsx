@@ -9,7 +9,7 @@ export function TabBarPlaceholder() {
         />
         <Text style={{ fontWeight: "bold" }}>All</Text>
       </Pressable>
- 
+
       <Pressable style={[sTabBar.t, sTabBar.button]}>
         <Image
           style={sTabBar.image}
@@ -17,7 +17,7 @@ export function TabBarPlaceholder() {
         />
         <Text>Rides</Text>
       </Pressable>
- 
+
       <Pressable style={[sTabBar.t, sTabBar.button]}>
         <Image
           style={sTabBar.image}
@@ -25,7 +25,7 @@ export function TabBarPlaceholder() {
         />
         <Text>Grocery</Text>
       </Pressable>
- 
+
       <Pressable style={[sTabBar.t, sTabBar.button]}>
         <Image
           style={sTabBar.image}
@@ -36,10 +36,10 @@ export function TabBarPlaceholder() {
     </View>
   );
 }
- 
+
+//exported so it can be reused in the content placeholder
 export const sTabBar = StyleSheet.create({
   c: {
-    marginLeft: 18,
     flexDirection: "row",
     borderTopWidth: 1,
     borderBottomWidth: 1,
