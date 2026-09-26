@@ -5,6 +5,7 @@ import {sProfile} from "./ProfileHeader";
 export const ContentPlaceholder = () => {
   return (
     <View>
+        {/*Used chatgpt to fix some views because I nested them wrong */}
         {/*food options*/}
         <ScrollView horizontal={true} contentContainerStyle={s.container}>
             <View style={s.card}>

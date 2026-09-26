@@ -1,5 +1,5 @@
 import { Image, Pressable, StyleSheet, Text, View } from "react-native";
-import { sTabBar } from "./TabBarPlaceholder";
+import { sTabBar } from "./TabBarPlaceholder"; //learned how to import from chatgpt
 export const BottomNavigation = () => {
   return (
     <View style={sTabBar.c}>
